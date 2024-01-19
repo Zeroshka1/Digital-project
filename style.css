@@ -1,0 +1,225 @@
+@font-face{
+    font-family: 'TTHoves-reg';
+    src: url(font/TTHoves/TTHoves-Regular.eot);
+}
+@font-face{
+    font-family: 'TTHoves-light';
+    src: url(font/TTHoves/TTHoves-Light.eot);
+}
+@font-face{
+    font-family: 'TTHoves-bold';
+    src: url(font/TTHoves/TTHoves-Bold.eot);
+}
+@font-face{
+    font-family: 'SFPD-bold';
+    src: url(font/SFPD/SF-Pro-Display-Bold.otf);
+}
+@font-face{
+    font-family: 'SFPD-reg';
+    src: url(font/SFPD/SF-Pro-Display-Regular.otf);
+}
+@font-face{
+    font-family: 'SFPD-light';
+    src: url(font/SFPD/SF-Pro-Display-Light.otf);
+}
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'SFPD-reg';
+    font-weight: 300;
+    text-decoration: none;
+    color: #333333;
+}
+.hidden{
+    display: none;
+}
+/* Общий контейнер */
+.container{
+    max-width: 1170px;
+    width: 100%;
+    margin-top: 29px;
+}
+/* блок с навигацией и лого */
+.logo-navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+/* лого */
+.logo{
+    margin: 0;
+}
+/* стили для ссылок в навигации */
+.navigation a{
+    padding: 0px 30px;
+    display: inline-block;
+}
+.navigation a::after{
+	content: "";
+    display: block;
+    bottom: -3px;
+    width: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 1px;
+    background-color: #333333;
+    transition: width 0.5s, opacity 0.8s;
+}
+.navigation a::before{
+	content: "";
+    display: block;
+    bottom: -3px;
+    width: 0;
+    height: 1px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: #333333;
+    transition: width 0.5s, opacity 0.8s;
+}
+.navigation a:hover:after,
+.navigation a:hover:before{
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.navigation{
+margin-left: 20%;
+    display: flex;
+}
+/* блок с слайдером */
+.PROJECT-NURTOWN{
+    display: flex;
+}
+.name-button{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.name-button h1{
+    color: #BDBDBD;
+    font-family: 'SFPD-light';
+    font-size: 64px;
+}
+#NURTOWN{
+    font-family: 'SFPD-bold';
+    font-size: 64px;
+}
+.button-slider{
+    margin: 90px 0px;
+}
+/* кнопки переключения слайдов и их стили */
+#prev,#next{
+    width: 53px;
+    height: 53px;
+    background-color: #ffff;
+    border: #F2F2F2 solid 1px;
+    transition: 1s;
+}
+#prev:hover
+,#next:hover{
+    background-color: #F9F9F9;
+}
+#prev img{
+    transform: scaleX(-1);
+}
+#prev{
+    margin-right: 22px;
+}
+/* номер слайда */
+.num-slides{
+    margin: 0;
+}
+.num-slides h2{
+    word-spacing:25px;
+    color: #BDBDBD;
+}
+.num-change{
+    
+    color: #BDBDBD;
+}
+/* слайдер */
+.slider{
+    width: 770px;
+    height: 829px;
+    z-index: 1;
+}
+.slide-active{
+    opacity: 1;
+}
+#slide-1, #slide-2{
+    position: absolute;
+    width: 770px;
+    height: 829px;
+    transition: opacity 2s ease; 
+    z-index: 0;
+}
+
+.slider-wrapper button{
+    z-index: 2;
+    position: absolute;
+}
+.transition-button{
+    text-align: center;
+    word-spacing:12px;
+    width: 221px;
+    height: 71px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-size: 12px;
+}
+.slider-wrapper{
+    margin-left: 69px;
+    display: flex;
+    align-items: end;
+}
+
+.About-Company{
+    background-color: #FBFBFB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.adout-us h1{
+    font-family: 'SFPD-light';
+    font-size: 64px;
+    color: #BDBDBD;
+}
+.adout-us p{
+    color:black;
+    line-height: 25px;
+    max-width: 400px;
+    margin: 20px 0px;
+}
+.adout-us{
+    margin: 30px 0px 30px 30px;
+}
+.right-photo{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+.right-photo img:first-child{
+    margin-bottom: 30px;
+}
+.photo-office{
+    display: flex;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+
+
+
+
+@media (max-width:768px) {
+    .navigation{
+        margin-left: 20%;
+        display: flex;
+    }
+}
