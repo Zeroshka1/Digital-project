@@ -44,13 +44,13 @@
         </div>
 
         <div class="About-Company">
-            <!-- <div class="photo-office">
+            <div class="photo-office">
                 <div class="right-photo">
                     <img src="image/about_company1.png" alt="">
                     <img src="image/about_company3.png" alt="">
                 </div>
                 <img src="image/about_company2.png" alt="">
-            </div> -->
+            </div>
 
             <div class="adout-us">
                 <h1>О компании</h1>
@@ -58,7 +58,109 @@
                 <button class="transition-button">ЧИТАТЬ <img src="image/row-right.png" alt=""></button>
             </div>
         </div>
+
+        <div class="main-task">
+            <h1>Основные задачи</h1>
+            <div class="num-task">
+                <div class="r-tusk">
+                    <span class="big-number">1</span>
+                    <p class="text-task">Создание комфортных<br>
+                        условий и повышение<br>
+                        качества обслуживания<br>
+                        клиентов</p>
+                </div>
+                <div class="l-tusk">
+                    <span class="big-number">2</span>
+                    <p class="text-task">Постоянно совершенствовать качество<br>
+                        предоставляемых услуг путем обучения<br>
+                        персонала, закупки нового оборудования<br>
+                        и усиленной рекламы на рынке</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="our-projects">
+           <h1 class="title">Наши проекты</h1>
+            <div class="projects">
+                <!-- проекты сверху -->
+                <div class="upper">
+                    <!-- проект 1 -->
+                    <div class="thumbs">
+                        <img src="image/project_main1.png" />
+                        <div class="caption">
+                            <span class="title">ДОСУГОВЫЙ ЦЕНТР</span>
+                            <span class="info"><button class="info-button">ПОДРОБНЕЕ <img src="image/row-right-white.png" alt="" class="info-image"></button></span>
+                        </div>
+                    </div>
+                    <!-- проект 2 -->
+                    <div class="thumbs">
+                        <img src="image/project_main2.png"/>
+                        <div class="caption">
+                            <span class="title">РАМПА</span>
+                            <span class="info"><button class="info-button">ПОДРОБНЕЕ <img src="image/row-right-white.png" alt="" class="info-image"></button></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- проекты снизу -->
+                <div class="down">
+                    <!-- проект 1 -->
+                    <div class="thumbs">
+                        <img src="image/project_main3.png" id="image-info1"/>
+                        <div class="caption">
+                            <span class="title">ПОЛЕ</span>
+                            <span class="info"><button class="info-button">ПОДРОБНЕЕ <img src="image/row-right-white.png" alt="" class="info-image"></button></span>
+                        </div>
+                    </div>
+                    <!-- проект 2 -->
+                    <div class="thumbs">
+                        <img src="image/project_main4.png" id="image-info2"/>
+                        <div class="caption">
+                            <span class="title">ОТЕЛЬ</span>
+                            <span class="info"><button class="info-button">ПОДРОБНЕЕ <img src="image/row-right-white.png" alt="" class="info-image"></button></span>
+                        </div>
+                    </div>
+                    <!-- проект 3 -->
+                    <div class="thumbs">
+                        <img src="image/project_main5.png" id="image-info3"/>
+                        <div class="caption">
+                            <span class="title">ПАРК</span>
+                            <span class="info"><button class="info-button">ПОДРОБНЕЕ <img src="image/row-right-white.png" alt="" class="info-image"></button></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="button-container">
+                <button class="button-black">ВСЕ ПРОЕКТЫ <img src="image/row-right-white.png" alt=""></button>
+            </div>
+        </div>
+
+        <div class="contact-us">
+            <h1 class="title">Связаться с нами</h1>
+            <div class="form-and-image">
+                <form action="post" class="form">
+                    <input type="text" placeholder="Имя" class="name">
+                    <input name="phone" data-phone-pattern class="phone" placeholder="Номер телефона*" required>
+                    <input type="email" placeholder="E-mail*" required class="email">
+                    <input type="text" placeholder="Интересующий товар/услуга" class="item">
+                    <textarea name="comment" placeholder="Сообщение*" class="textarea" required></textarea>
+                    <div class="checkbox-access">
+                        <input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes">
+                        <label for="happy" class="access">
+                            Отправляя заявку Вы соглашаетесь с политикой<br>
+                            конфиденциальности
+                        </label>
+                    </div>
+                    <button class="button-black" id="but">ОТПРАВИТЬ <img src="image/row-right-white.png" alt=""></button>
+                </form>
+                <img src="image/contact.png" alt="" class="contact-image">
+            </div>
+        </div>
     </div>
+    <footer>
+            
+    </footer>
+    <script src="mask-number.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
