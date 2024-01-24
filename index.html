@@ -138,29 +138,84 @@
         <div class="contact-us">
             <h1 class="title">Связаться с нами</h1>
             <div class="form-and-image">
-                <form action="post" class="form">
+                <form  class="form">
                     <input type="text" placeholder="Имя" class="name">
                     <input name="phone" data-phone-pattern class="phone" placeholder="Номер телефона*" required>
                     <input type="email" placeholder="E-mail*" required class="email">
                     <input type="text" placeholder="Интересующий товар/услуга" class="item">
                     <textarea name="comment" placeholder="Сообщение*" class="textarea" required></textarea>
                     <div class="checkbox-access">
-                        <input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes">
+                        <input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes" required>
                         <label for="happy" class="access">
                             Отправляя заявку Вы соглашаетесь с политикой<br>
                             конфиденциальности
                         </label>
                     </div>
-                    <button class="button-black" id="but">ОТПРАВИТЬ <img src="image/row-right-white.png" alt=""></button>
+                    <button type="button" class="button-black" id="but">ОТПРАВИТЬ <img src="image/row-right-white.png" alt=""></button>
                 </form>
                 <img src="image/contact.png" alt="" class="contact-image">
             </div>
         </div>
+
+        <div class="popup-ths hidden-popup">
+            <div class="popup-content">
+                <div class="close"><img src="image/close.png" alt=""></div>
+                <img src="image/success.png" alt="" class="success-image">
+                <h1 class="success-title">Спасибо !</h1>
+                <p class="success-text">Ваше сообщение отправлено мы свяжемся с вами в <br>ближайшее время</p>
+                <button class="button-black" id="success-button">ВЕРНУТСЯ НАЗАД</button>
+            </div>
+        </div>
     </div>
+
     <footer>
-            
+        <div class="up-footer">
+            <img src="image/logo-white.png" alt=""> 
+
+            <div class="information">
+                <h1 class="title-footer">Информация</h1>
+                <nav class="information-content">
+                    <a href="" class="information-item">Главная</a>
+                    <a href="" class="information-item">Галерея</a>
+                    <a href="" class="information-item">Проекты</a>
+                    <a href="" class="information-item">Сертификаты</a>
+                    <a href="" class="information-item">Контакты</a>
+                </nav>
+            </div>
+    
+            <div class="contact">
+                <h1 class="title-footer">Контакты</h1>
+                <div class="content-contact">
+                    <img src="image/geo.png" alt="">
+                    <p>100000, Республика Казахстан,<br> г. Караганда, ул. Телевизионная 10</p>
+                </div>
+    
+                <div class="content-contact">
+                    <img src="image/phone.png" alt="">
+                    <p>+7 (701) 77 76 811</p>
+                </div>
+    
+                <div class="content-contact">
+                    <img src="image/mail.png" alt="">
+                    <p>Galym.sultanov@mail.ru</p>
+                </div>
+            </div>
+    
+            <div class="social">
+                <h1 class="title-footer">Социальные сети</h1>
+                <div class="content-social">
+                    <a href=""><img src="image/facebook.png" alt=""></a>
+                    <a href=""><img src="image/twitter.png" alt=""></a>
+                    <a href=""><img src="image/Linked In.png" alt=""></a>
+                    <a href=""><img src="image/pininterest.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="down-footer">
+            <p>© 2019 Digital Project. Все права защищены.</p>
+        </div>
     </footer>
-    <script src="mask-number.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
